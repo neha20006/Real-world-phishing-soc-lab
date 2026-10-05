@@ -1,0 +1,42 @@
+HEADER ANALYSIS
+===============
+
+From:
+"Microsoft Account Team"
+<noreply@microsoftonline-verify.com>
+
+To:
+jacobcookofficial@gmail.com
+
+Subject:
+[Action Required] Unusual sign-in activity on your account
+
+Return-Path:
+noreply@microsoftonline-verify.com
+
+Sending Host:
+mail.microsoftonline-verify.com
+
+Upstream Host:
+vps-291847.contabo.net
+
+Sending IP:
+178.238.225.91
+
+Date:
+Thu, 06 Feb 2026 17:14:18 +0000
+
+Message-ID:
+<8c4f2e91.a03b7d44.1f2e8a@microsoftonline-verify.com>
+
+
+OBSERVATION
+-----------
+
+The email claims to be from Microsoft Account Team.
+
+The sender domain is:
+microsoftonline-verify.com
+
+The sending infrastructure observed in the Received
+header includes IP address 178.238.225.91.

@@ -1,0 +1,39 @@
+IP THREAT INTELLIGENCE
+======================
+
+IP:
+91.234.99.42
+
+ROLE:
+IP mentioned inside the email as the alleged
+source of an unusual sign-in.
+
+
+VIRUSTOTAL
+----------
+
+Detection:
+0 / 91
+
+Security vendors flagging malicious:
+0
+
+Country displayed:
+Russia (RU)
+
+
+ASSESSMENT
+----------
+
+VirusTotal did not identify a malicious verdict for
+the IP at the time of the investigation.
+
+The IP was found inside the email body and was
+presented as the alleged source of an unusual login.
+
+There is no independent evidence in this investigation
+confirming that this IP actually accessed the recipient's
+account.
+
+Therefore, it is treated as an investigation artifact
+rather than confirmed attacker infrastructure.

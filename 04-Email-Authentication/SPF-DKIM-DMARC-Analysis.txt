@@ -1,0 +1,27 @@
+EMAIL AUTHENTICATION ANALYSIS
+=============================
+
+SPF:
+FAIL
+
+DKIM:
+FAIL
+
+DMARC:
+FAIL
+
+
+ANALYSIS
+--------
+
+Result: FAIL
+
+Result: FAIL
+
+Result: FAIL
+
+
+FINDING
+-------
+
+SPF, DKIM and DMARC all failed.

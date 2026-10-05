@@ -1,0 +1,32 @@
+REAL-WORLD PHISHING SOC INVESTIGATION
+
+CASE ID:
+PHISH-GH-001
+
+CASE TITLE:
+Microsoft Account Phishing Email Investigation
+
+ALERT TYPE:
+Suspicious Email / Possible Phishing
+
+EVIDENCE SOURCE:
+Public GitHub Phishing Analysis Lab
+
+SAMPLE:
+sample2.eml
+
+INITIAL SUBJECT:
+[Action Required] Unusual sign-in activity on your account
+
+INITIAL DESCRIPTION:
+A suspicious email impersonating Microsoft Account security
+was selected for investigation.
+
+ANALYST:
+Neha 
+
+INVESTIGATION STATUS:
+Completed
+
+FINAL VERDICT:
+Phishing

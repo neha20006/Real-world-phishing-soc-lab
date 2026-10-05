@@ -1,0 +1,303 @@
+============================================================
+FINAL INCIDENT REPORT
+============================================================
+
+CASE ID: PHISH-GH-001
+
+CASE TITLE:
+Microsoft Account Phishing Email Investigation
+
+ALERT TYPE:
+Suspicious Email / Phishing
+
+EVIDENCE SOURCE:
+Public GitHub Phishing Analysis Lab
+
+SAMPLE:
+sample2.eml
+
+
+------------------------------------------------------------
+1. EXECUTIVE SUMMARY
+------------------------------------------------------------
+
+A suspicious email impersonating Microsoft Account Security
+was investigated using the provided raw .eml email evidence.
+
+The email claimed that unusual sign-in activity had been
+detected on the recipient's account and instructed the
+recipient to review recent activity.
+
+The investigation included email header analysis,
+SPF/DKIM/DMARC analysis, IOC extraction, URL investigation,
+domain/DNS investigation, and IP threat-intelligence checks.
+
+Based on the combined evidence, the email was classified as
+PHISHING.
+
+
+------------------------------------------------------------
+2. EMAIL DETAILS
+------------------------------------------------------------
+
+From:
+"Microsoft Account Team" <noreply@microsoftonline-verify.com>
+
+To:
+jacobcookofficial@gmail.com
+
+Subject:
+[Action Required] Unusual sign-in activity on your account
+
+Return-Path:
+noreply@microsoftonline-verify.com
+
+Date:
+Thu, 06 Feb 2026 17:14:18 +0000
+
+Sending IP:
+178.238.225.91
+
+Sending Host:
+mail.microsoftonline-verify.com
+
+Upstream Host:
+vps-291847.contabo.net
+
+
+------------------------------------------------------------
+3. KEY FINDINGS
+------------------------------------------------------------
+
+Finding 1:
+The sender used a domain that impersonates Microsoft's
+legitimate online account/security services.
+
+Finding 2:
+The email used an urgent account-security theme involving
+unusual sign-in activity.
+
+Finding 3:
+SPF authentication failed.
+
+Finding 4:
+DKIM authentication failed.
+
+Finding 5:
+DMARC authentication failed.
+
+Finding 6:
+The email contained a shortened Bitly URL.
+
+Finding 7:
+VirusTotal reported 1/91 detections for the investigated
+URL, with Phishing Database identifying the URL as phishing.
+
+Finding 8:
+The sending IP 178.238.225.91 was associated with
+Contabo GmbH / AS51167. The IP itself was not currently
+flagged as malicious by VirusTotal.
+
+Finding 9:
+The IP address 91.234.99.42 appeared inside the email body
+as the alleged unusual sign-in IP. This was treated as an
+investigation artifact and not automatically confirmed as
+attacker infrastructure.
+
+
+------------------------------------------------------------
+4. IOC LIST
+------------------------------------------------------------
+
+Sender Email:
+noreply@microsoftonline-verify.com
+
+Sender Domain:
+microsoftonline-verify.com
+
+Sending IP:
+178[.]238[.]225[.]91
+
+Sending Host:
+vps-291847.contabo.net
+
+Mail Host:
+mail.microsoftonline-verify.com
+
+Suspicious URL:
+hxxps://bit[.]ly/3vF9xKz
+
+IP Mentioned in Email:
+91[.]234[.]99[.]42
+
+Message-ID:
+<8c4f2e91.a03b7d44.1f2e8a@microsoftonline-verify.com>
+
+
+------------------------------------------------------------
+5. EMAIL AUTHENTICATION
+------------------------------------------------------------
+
+SPF:
+FAIL
+
+DKIM:
+FAIL
+
+DMARC:
+FAIL
+
+The authentication failures increase the suspicion that the
+message was not legitimately authenticated as being from the
+claimed sender.
+
+
+------------------------------------------------------------
+6. URL INVESTIGATION
+------------------------------------------------------------
+
+Investigated URL:
+https://bit.ly/3vF9xKz
+
+VirusTotal Result:
+1/91
+
+Detection:
+Phishing Database - Phishing
+
+Current URL Status:
+404
+
+The URL investigation provided supporting evidence that the
+link was associated with phishing activity.
+
+The 404 status indicates that the resource was unavailable
+at the time of investigation and does not by itself prove
+that the URL was malicious.
+
+
+------------------------------------------------------------
+7. DOMAIN / DNS INVESTIGATION
+------------------------------------------------------------
+
+Investigated Domain:
+microsoftonline-verify.com
+
+DNS investigation using MXToolbox showed no active:
+
+A record
+AAAA record
+MX record
+NS record
+CNAME record
+SOA record
+SPF record
+DMARC record
+
+The absence of DNS records was treated as supporting
+investigation evidence and not as standalone proof of
+maliciousness.
+
+
+------------------------------------------------------------
+8. SENDING IP INVESTIGATION
+------------------------------------------------------------
+
+IP:
+178.238.225.91
+
+ASN:
+AS51167
+
+Organization:
+Contabo GmbH
+
+Network:
+178.238.224.0/20
+
+Current PTR:
+vmi3247644.contaboserver.net
+
+VirusTotal:
+0/91
+
+The IP was not currently flagged as malicious by the
+VirusTotal vendors checked.
+
+The hosting-provider attribution alone does not establish
+malicious intent.
+
+
+------------------------------------------------------------
+9. SOCIAL ENGINEERING INDICATORS
+------------------------------------------------------------
+
+The email used several phishing characteristics:
+
+- Microsoft impersonation
+- Urgent subject line
+- Account-security theme
+- Unusual sign-in warning
+- Request to review account activity
+- Suspicious sender domain
+- Shortened URL
+- Failed email authentication
+
+
+------------------------------------------------------------
+10. FINAL ASSESSMENT
+------------------------------------------------------------
+
+VERDICT:
+PHISHING
+
+CONFIDENCE:
+HIGH
+
+REASON:
+
+The email combines multiple phishing indicators including
+Microsoft impersonation, an urgent account-security theme,
+SPF/DKIM/DMARC authentication failures, a suspicious sender
+domain, and a shortened URL that received a phishing
+detection during threat-intelligence analysis.
+
+
+------------------------------------------------------------
+11. RECOMMENDED SOC RESPONSE
+------------------------------------------------------------
+
+1. Do not click the suspicious URL.
+
+2. Quarantine or remove the phishing email.
+
+3. Block the identified malicious URL/domain where
+   appropriate.
+
+4. Search the environment for other emails containing the
+   identified IOCs.
+
+5. Check whether the recipient clicked the URL.
+
+6. If the user interacted with the phishing page, investigate
+   possible credential exposure.
+
+7. Review relevant identity-provider and endpoint logs for
+   suspicious activity.
+
+8. Reset credentials if compromise is confirmed or suspected.
+
+9. Enable or verify MFA where appropriate.
+
+10. Document the incident and preserve the original email
+    evidence.
+
+
+------------------------------------------------------------
+12. CONCLUSION
+------------------------------------------------------------
+
+The investigated email was classified as phishing based on
+the combined evidence collected during the investigation.
+
+==========================================================

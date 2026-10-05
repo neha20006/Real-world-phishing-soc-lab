@@ -1,0 +1,51 @@
+URL INVESTIGATION
+=================
+
+URL FOUND IN EMAIL:
+https://bit.ly/3vF9xKz
+
+URL TYPE:
+Shortened URL
+
+
+VIRUSTOTAL RESULT:
+1 / 91
+
+SECURITY VENDOR:
+Phishing Database
+
+CLASSIFICATION:
+Phishing
+
+
+CURRENT URL STATUS:
+404
+
+CONTENT TYPE:
+text/html
+
+
+ANALYSIS
+--------
+
+The email contains a shortened URL.
+
+Shortened URLs can hide the final destination and
+therefore require investigation.
+
+The URL received a phishing classification from
+one security vendor in VirusTotal.
+
+The current URL returned a 404 response during
+the investigation.
+
+
+IMPORTANT NOTE
+--------------
+
+The 404 response alone does not prove that the URL
+was malicious.
+
+The phishing classification provides additional
+supporting evidence when combined with the other
+indicators found in the email.

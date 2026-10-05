@@ -1,0 +1,42 @@
+IOC / INVESTIGATION ARTIFACT LIST
+=================================
+
+1. Sender Email
+noreply@microsoftonline-verify.com
+
+
+2. Sender Domain
+microsoftonline-verify.com
+
+
+3. Sending IP
+178[.]238[.]225[.]91
+
+
+4. Sending Host
+mail.microsoftonline-verify.com
+
+
+5. Upstream Host
+vps-291847.contabo.net
+
+
+6. Suspicious URL
+hxxps://bit[.]ly/3vF9xKz
+
+
+7. IP Mentioned in Email
+91[.]234[.]99[.]42
+
+
+8. Message-ID
+<8c4f2e91.a03b7d44.1f2e8a@microsoftonline-verify.com>
+
+
+NOTE
+----
+
+91.234.99.42 was found inside the email body as the
+alleged source of an unusual sign-in.
+
+It is not confirmed attacker infrastructure.

@@ -1,0 +1,56 @@
+IP THREAT INTELLIGENCE
+======================
+
+IP:
+178.238.225.91
+
+ROLE:
+Email-sending infrastructure
+
+
+WHOIS
+-----
+
+Network:
+178.238.224.0 - 178.238.227.255
+
+Organization:
+Contabo GmbH
+
+Country:
+Germany
+
+ASN:
+AS51167
+
+
+PTR
+---
+
+Current PTR:
+vmi3247644.contaboserver.net
+
+
+VIRUSTOTAL
+----------
+
+Detection:
+0 / 91
+
+Security vendors flagging malicious:
+0
+
+
+ASSESSMENT
+----------
+
+The IP is associated with Contabo infrastructure.
+
+VirusTotal did not identify a malicious verdict for
+the IP at the time of the investigation.
+
+The hosting provider attribution does not by itself
+prove malicious activity.
+
+The IP remains relevant because it was identified as
+the email-sending infrastructure.
